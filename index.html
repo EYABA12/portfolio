@@ -4,22 +4,50 @@
     <title>Eya Ben Amor | Portfolio</title>
     <style>
         body {
-            font-family: Arial;
+            font-family: Arial, sans-serif;
             margin: 40px;
             background-color: #f4f4f4;
         }
-        h1 {
+        h1, h2 {
             color: #2c3e50;
         }
-        .project {
+        h2 {
+            margin-top: 50px;
+        }
+        .project, .certification {
             background: white;
-            padding: 15px;
+            padding: 20px;
             margin-bottom: 20px;
             border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
         a {
             color: #0077cc;
             text-decoration: none;
+        }
+        .technologies span {
+            display: inline-block;
+            background: #0077cc;
+            color: white;
+            padding: 5px 10px;
+            margin: 5px 5px 0 0;
+            border-radius: 5px;
+            font-size: 0.9em;
+        }
+        .video-demo {
+            max-width: 100%;
+            margin-top: 10px;
+            border-radius: 10px;
+        }
+        img.screenshot {
+            max-width: 100%;
+            margin-top: 10px;
+            border-radius: 10px;
+        }
+        .certification img {
+            max-width: 150px;
+            margin-right: 10px;
+            vertical-align: middle;
         }
     </style>
 </head>
@@ -33,18 +61,55 @@
 <div class="project">
     <h3>Stack Overflow Clone</h3>
     <p>Plateforme web développée avec Spring Boot & Angular permettant l’échange de connaissances.</p>
+    
+    <!-- Capture ou vidéo -->
+    <img src="screenshot_stackoverflow.png" alt="Capture Stack Overflow Clone" class="screenshot">
+    <!-- ou vidéo -->
+    <!-- <video src="demo_stackoverflow.mp4" controls class="video-demo"></video> -->
+
+    <p><strong>Technologies :</strong></p>
+    <div class="technologies">
+        <span>Angular</span>
+        <span>Spring Boot</span>
+        <span>MySQL</span>
+        <span>HTML/CSS</span>
+    </div>
+
     <p><a href="TON_LIEN_GITHUB">Voir sur GitHub</a></p>
 </div>
 
 <div class="project">
     <h3>Plateforme DevOps - PFE</h3>
     <p>Automatisation des tests avec Jenkins, Docker et Raspberry Pi.</p>
+    
+    <img src="screenshot_devops.png" alt="Capture Plateforme DevOps" class="screenshot">
+    <!-- ou vidéo -->
+    <!-- <video src="demo_devops.mp4" controls class="video-demo"></video> -->
+
+    <p><strong>Technologies :</strong></p>
+    <div class="technologies">
+        <span>Jenkins</span>
+        <span>Docker</span>
+        <span>Python</span>
+        <span>Raspberry Pi</span>
+        <span>Angular</span>
+    </div>
+
     <p><a href="TON_LIEN_GITHUB">Voir sur GitHub</a></p>
+</div>
+
+<h2>🏆 Certifications & Competitions</h2>
+<div class="certification">
+    <p><strong>ISTQB® Certified Tester</strong></p>
+    <img src="istqb_badge.png" alt="Badge ISTQB">
+    
+    <p><strong>Compétition DevOps 2025 - 2ᵉ place</strong></p>
+    <img src="competition_badge.png" alt="Badge Competition">
 </div>
 
 <h2>📩 Contact</h2>
 <p>Email: tonemail@gmail.com</p>
-<p>LinkedIn: ton lien</p>
+<p>LinkedIn: <a href="TON_LINKEDIN">ton lien</a></p>
 
 </body>
 </html>
