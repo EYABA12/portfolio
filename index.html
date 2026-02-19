@@ -4,53 +4,80 @@
     <title>Eya Ben Amor | Portfolio</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 40px;
-            background-color: #f4f4f4;
-        }
-        h1, h2 {
+            background-color: #f0f2f5;
             color: #2c3e50;
         }
+        h1 {
+            font-size: 2.5em;
+            color: #1abc9c;
+            margin-bottom: 5px;
+        }
         h2 {
+            color: #34495e;
             margin-top: 50px;
+            border-bottom: 2px solid #1abc9c;
+            padding-bottom: 5px;
         }
-        .contact {
-            margin-bottom: 30px;
+        .contact p {
+            margin: 5px 0;
+            font-size: 1em;
         }
-        .project {
-            background: white;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-        a {
-            color: #0077cc;
+        .contact a {
+            color: #1abc9c;
             text-decoration: none;
         }
-        .technologies span {
+        .project {
+            background: #ffffff;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .project:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        }
+        .technologies span, .dates, .team {
             display: inline-block;
-            background: #0077cc;
-            color: white;
-            padding: 5px 10px;
             margin: 5px 5px 0 0;
+            padding: 5px 10px;
             border-radius: 5px;
-            font-size: 0.9em;
+            font-size: 0.85em;
+        }
+        .technologies span {
+            background-color: #1abc9c;
+            color: white;
         }
         .dates {
+            background-color: #3498db;
+            color: white;
             font-style: italic;
-            color: #555;
         }
         .team {
+            background-color: #e67e22;
+            color: white;
             font-weight: bold;
-            color: #333;
+        }
+        a {
+            display: inline-block;
+            margin-top: 10px;
+            color: #1abc9c;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
 
 <h1>Eya Ben Amor</h1>
-<p>Ingénieure Informatique Junior, passionnée par le développement web et le DevOps, certifiée ISTQB®, et motivée à développer mes compétences au sein d’une entreprise innovante et agile.</p>
+<p>Ingénieure Informatique Junior, passionnée par le développement web et le DevOps, certifiée ISTQB®, motivée à développer mes compétences au sein d’une entreprise innovante et agile.</p>
+
 <div class="contact">
     <p>Email : <a href="mailto:eyabenamor.work@gmail.com">eyabenamor.work@gmail.com</a></p>
     <p>Téléphone : +216 29 020 087</p>
@@ -62,58 +89,72 @@
 
 <div class="project">
     <h3>Automotive Lighting Remote Testing Platform | KPIT</h3>
-    <p class="dates">Janv. 2025 – Juin 2025 | Stage de fin d’études (6 mois)</p>
-    <p><strong>Technologies :</strong> Angular, Spring Boot, Jenkins, Docker, Git, Jira</p>
-    <p class="team">Travail en équipe : 5 développeurs + 2 testeurs + 1 ingénieur DevOps</p>
-    <p><a href="https://github.com/EYABA12/-End--of-Study-Internship.git" target="_blank">Voir sur GitHub</a></p>
+    <div class="dates">Janv. 2025 – Juin 2025 | Stage de fin d’études (6 mois)</div>
+    <div class="technologies">
+        <span>Angular</span><span>Spring Boot</span><span>Jenkins</span><span>Docker</span><span>Git</span><span>Jira</span><span>Scrum</span>
+    </div>
+    <div class="team">5 développeurs + 2 testeurs + 1 ingénieur DevOps</div>
+    <a href="https://github.com/EYABA12/-End--of-Study-Internship.git" target="_blank">Voir sur GitHub</a>
 </div>
 
 <div class="project">
     <h3>Stage de 2ᵉ année – Automatisation du déploiement et gestion du cloud | Piximind</h3>
-    <p class="dates">Juin 2024 – Août 2024 | Stage ingénieur (2 mois)</p>
-    <p><strong>Technologies :</strong> Docker, Docker Compose, Terraform, Ansible, Jenkins, Azure</p>
-    <p class="team">Travail en équipe : 2 ingénieurs DevOps</p>
-    <p><a href="https://github.com/EYABA12/Second-Year-Internship-Automate-Application-Deployment-and-Cloud-Management.git" target="_blank">Voir sur GitHub</a></p>
+    <div class="dates">Juin 2024 – Août 2024 | Stage ingénieur (2 mois)</div>
+    <div class="technologies">
+        <span>Docker</span><span>Docker Compose</span><span>Terraform</span><span>Ansible</span><span>Jenkins</span><span>Azure</span><span>Cloud</span><span>Scrum</span>
+    </div>
+    <div class="team">2 ingénieurs DevOps</div>
+    <a href="https://github.com/EYABA12/Second-Year-Internship-Automate-Application-Deployment-and-Cloud-Management.git" target="_blank">Voir sur GitHub</a>
 </div>
 
 <div class="project">
     <h3>Stage de 1ʳᵉ année – Plateforme de gestion des nouveaux employés | Finlogik</h3>
-    <p class="dates">Juil. 2023 – Sept. 2023 | Stage ingénieur (3 mois)</p>
-    <p><strong>Technologies :</strong> Angular, C#, ASP.NET, Bootstrap, MySQL, Git</p>
-    <p class="team">Travail en équipe : 2 développeurs</p>
-    <p><a href="https://github.com/EYABA12/First-Year-Internship-Management-plateform-for-new-recruits.git" target="_blank">Voir sur GitHub</a></p>
+    <div class="dates">Juil. 2023 – Sept. 2023 | Stage ingénieur (3 mois)</div>
+    <div class="technologies">
+        <span>Angular</span><span>C#</span><span>ASP.NET</span><span>Bootstrap</span><span>MySQL</span><span>Git</span>
+    </div>
+    <div class="team">2 développeurs</div>
+    <a href="https://github.com/EYABA12/First-Year-Internship-Management-plateform-for-new-recruits.git" target="_blank">Voir sur GitHub</a>
 </div>
 
 <div class="project">
     <h3>Application de gestion de restaurant – Freelance</h3>
-    <p class="dates">Jan. 2026 – Présent | Projet Freelance</p>
-    <p><strong>Technologies :</strong> Java, Angular, Spring Boot, Spring Security, Docker, REST API</p>
-    <p class="team">Travail solo</p>
-    <p><a href="https://github.com/EYABA12/Freelance-Software-Developer-Restaurant-Management-Application.git" target="_blank">Voir sur GitHub</a></p>
+    <div class="dates">Jan. 2026 – Présent | Projet Freelance</div>
+    <div class="technologies">
+        <span>Java</span><span>Angular</span><span>Spring Boot</span><span>Spring Security</span><span>Docker</span><span>REST API</span>
+    </div>
+    <div class="team">Travail solo</div>
+    <a href="https://github.com/EYABA12/Freelance-Software-Developer-Restaurant-Management-Application.git" target="_blank">Voir sur GitHub</a>
 </div>
 
 <div class="project">
     <h3>Déploiement automatisé dans un cluster Kubernetes avec Jenkins et ArgoCD</h3>
-    <p class="dates">Sept. 2024 – Oct. 2024 | Projet académique</p>
-    <p><strong>Technologies :</strong> Kubernetes, HelmCharts, ArgoCD, Terraform, Jenkins, Azure</p>
-    <p class="team">Travail en équipe : 2 DevOps</p>
-    <p><a href="https://medium.com/p/39e18a98969f/edit" target="_blank">Voir sur Medium</a></p>
+    <div class="dates">Sept. 2024 – Oct. 2024 | Projet académique</div>
+    <div class="technologies">
+        <span>Kubernetes</span><span>HelmCharts</span><span>ArgoCD</span><span>Terraform</span><span>Jenkins</span><span>Azure</span>
+    </div>
+    <div class="team">2 DevOps</div>
+    <a href="https://medium.com/p/39e18a98969f/edit" target="_blank">Voir sur Medium</a>
 </div>
 
 <div class="project">
     <h3>Projet de fin d’année – Développement et déploiement d’une plateforme e-commerce</h3>
-    <p class="dates">Janv. 2024 – Avr. 2024 | Projet académique</p>
-    <p><strong>Technologies :</strong> Angular, Spring Boot, MySQL, Docker, Azure, GitHub Actions</p>
-    <p class="team">Travail en équipe : 2 développeurs</p>
-    <p><a href="https://github.com/EYABA12/Final-year-project-Development-and-Deployment-of-an-E-commerce-Platform.git" target="_blank">Voir sur GitHub</a></p>
+    <div class="dates">Janv. 2024 – Avr. 2024 | Projet académique</div>
+    <div class="technologies">
+        <span>Angular</span><span>Spring Boot</span><span>MySQL</span><span>Docker</span><span>Azure</span><span>GitHub Actions</span>
+    </div>
+    <div class="team">2 développeurs</div>
+    <a href="https://github.com/EYABA12/Final-year-project-Development-and-Deployment-of-an-E-commerce-Platform.git" target="_blank">Voir sur GitHub</a>
 </div>
 
 <div class="project">
-    <h3>Code Warriors – Plateforme collaborative d’apprentissage</h3>
-    <p class="dates">Févr. 2024 – Mars 2024 | Projet académique</p>
-    <p><strong>Technologies :</strong> Angular, Spring Boot, MySQL, Bootstrap</p>
-    <p class="team">Travail en équipe : 2 développeurs + 1 mentor</p>
-    <p><a href="https://github.com/EYABA12/Code-Warriors---Collaborative-Learning-Platform.git" target="_blank">Voir sur GitHub</a></p>
+    <h3>Competition Code Warriors – Plateforme collaborative d’apprentissage</h3>
+    <div class="dates">Févr. 2024 – Mars 2024 (20 jours) | Projet académique</div>
+    <div class="technologies">
+        <span>Angular</span><span>Spring Boot</span><span>MySQL</span><span>Bootstrap</span><span>Scrum</span>
+    </div>
+    <div class="team">2 développeurs + 1 mentor</div>
+    <a href="https://github.com/EYABA12/Code-Warriors---Collaborative-Learning-Platform.git" target="_blank">Voir sur GitHub</a>
 </div>
 
 </body>
